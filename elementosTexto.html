@@ -4,17 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas de texto</title>
+    <title>Guía de Etiquetas de Texto HTML</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 20px;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
 
         th,
         td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 12px;
             text-align: left;
         }
 
@@ -22,101 +31,149 @@
             background-color: #f2f2f2;
         }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+        tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0078d4;
         }
     </style>
 </head>
 
 <body>
-<table>
-    <thead>
-        <tr>
-            <th>Categoría</th>
-            <th>Etiqueta</th>
-            <th>Descripción</th>
-            <th>Atributos</th>
-            <th>Ejemplo</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan="4">Párrafo</td>
-            <td><code>&lt;p&gt;</code></td>
-            <td>Crea un párrafo</td>
-            <td>
-                <ul>
-                    <li><code>align</code>: Alinea el texto del párrafo</li>
-                    <li><code>class</code>: Asigna una clase al párrafo</li>
-                    <li><code>id</code>: Asigna un ID al párrafo</li>
-                    <li><code>style</code>: Aplica estilos al párrafo</li>
-                </ul>
-            </td>
-            <td>
-                <code>
-            <p align="center">Este es un párrafo centrado</p>
-            <p class="mi-clase">Este es un párrafo con una clase</p>
-            <p id="mi-id">Este es un párrafo con un ID</p>
-            <p style="color: red;">Este es un párrafo con un estilo</p>
-          </code>
-            </td>
-        </tr>
-        <tr>
-            <td><code>&lt;pre&gt;</code></td>
-            <td>Crea un bloque de texto preformateado</td>
-            <td>
-                <ul>
-                    <li><code>class</code>: Asigna una clase al bloque de texto preformateado</li>
-                    <li><code>id</code>: Asigna un ID al bloque de texto preformateado</li>
-                    <li><code>style</code>: Aplica estilos al bloque de texto preformateado</li>
-                </ul>
-            </td>
-            <td>
-                <code>
-            <pre class="mi-clase">
-              Este es un bloque de texto preformateado.
+    <h1>Guía de Etiquetas de Texto HTML</h1>
+    <p>Bienvenido a nuestra guía de etiquetas de texto HTML. Aquí encontrarás información detallada sobre las etiquetas
+        HTML más utilizadas para dar formato y estructura al texto en tus páginas web.</p>
 
-              * Este es un elemento de lista
-              * Este es otro elemento de lista
-            </pre>
-            <pre id="mi-id">
-              Este es un bloque de texto preformateado con un ID.
-            </pre>
-            <pre style="color: red;">
-              Este es un bloque de texto preformateado con un estilo.
-            </pre>
-          </code>
-            </td>
-        </tr>
-        <tr>
-            <td><code>&lt;blockquote&gt;</code></td>
-            <td>Crea una cita</td>
-            <td>
-                <ul>
-                    <li><code>cite</code>: Apunta a la fuente de la cita</li>
-                    <li><code>class</code>: Asigna una clase a la cita</li>
-                    <li><code>id</code>: Asigna un ID a la cita</li>
-                    <li><code>style</code>: Aplica estilos a la cita</li>
-                </ul>
-            </td>
-            <td>
-                <code>
-            <blockquote cite="https://www.wikipedia.org/wiki/Cita">
-              > "La vida es como una caja de bombones, nunca sabes lo que te va a tocar."
-              > - Forrest Gump
-            </blockquote>
-            <blockquote cite="https://www.example.com/cita">
-              Este es un ejemplo de cita con un ID.
-            </blockquote>
-            <blockquote style="color: red;">
-              Este es un ejemplo de cita con un estilo.
-            </blockquote>
-          </code>
-            </td>
-        </tr>
-        <tr>
-            <td><code>&lt;code&gt;</code></td>
-            <td>Crea un bloque de código
+    <table>
+        <thead>
+            <tr>
+                <th>Categoría</th>
+                <th>Etiqueta</th>
+                <th>Descripción</th>
+                <th>Atributos</th>
+                <th>Ejemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Párrafo</td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/p"><code>&lt;p&gt;</code></a></td>
+                <td>Crea un párrafo de texto.</td>
+                <td>
+                    <ul>
+                        <li><code>align</code>: Alinea el texto del párrafo.</li>
+                        <li><code>class</code>: Asigna una clase al párrafo.</li>
+                        <li><code>id</code>: Asigna un ID al párrafo.</li>
+                        <li><code>style</code>: Aplica estilos al párrafo.</li>
+                    </ul>
+                </td>
+                <td>
+                    <code>
+                        <p align="center">Este es un párrafo centrado</p>
+                        <p class="mi-clase">Este es un párrafo con una clase</p>
+                        <p id="mi-id">Este es un párrafo con un ID</p>
+                        <p style="color: red;">Este es un párrafo con un estilo</p>
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/pre"><code>&lt;pre&gt;</code></a>
+                </td>
+                <td>Crea un bloque de texto preformateado.</td>
+                <td>
+                    <ul>
+                        <li><code>class</code>: Asigna una clase al bloque de texto preformateado.</li>
+                        <li><code>id</code>: Asigna un ID al bloque de texto preformateado.</li>
+                        <li><code>style</code>: Aplica estilos al bloque de texto preformateado.</li>
+                    </ul>
+                </td>
+                <td>
+                    <code>
+                        <pre class="mi-clase">
+                          Este es un bloque de texto preformateado.
+
+                          * Este es un elemento de lista
+                          * Este es otro elemento de lista
+                        </pre>
+                        <pre id="mi-id">
+                          Este es un bloque de texto preformateado con un ID.
+                        </pre>
+                        <pre style="color: red;">
+                          Este es un bloque de texto preformateado con un estilo.
+                        </pre>
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td><a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/blockquote"><code>&lt;blockquote&gt;</code></a>
+                </td>
+                <td>Crea una cita o bloque de texto destacado.</td>
+                <td>
+                    <ul>
+                        <li><code>cite</code>: Apunta a la fuente de la cita.</li>
+                        <li><code>class</code>: Asigna una clase a la cita.</li>
+                        <li><code>id</code>: Asigna un ID a la cita.</li>
+                        <li><code>style</code>: Aplica estilos a la cita.</li>
+                    </ul>
+                </td>
+                <td>
+                    <code>
+                        <blockquote cite="https://www.wikipedia.org/wiki/Cita">
+                          "La vida es como una caja de bombones, nunca sabes lo que te va a tocar."
+                          - Forrest Gump
+                        </blockquote>
+                        <blockquote cite="https://www.example.com/cita">
+                          Este es un ejemplo de cita con un ID.
+                        </blockquote>
+                        <blockquote style="color: red;">
+                          Este es un ejemplo de cita con un estilo.
+                        </blockquote>
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/code"><code>&lt;code&gt;</code></a>
+                </td>
+                <td>Crea un bloque de código.</td>
+                <td>
+                    <ul>
+                        <li><code>class</code>: Asigna una clase al bloque de código.</li>
+                        <li><code>id</code>: Asigna un ID al bloque de código.</li>
+                        <li><code>style</code>: Aplica estilos al bloque de código.</li>
+                    </ul>
+                </td>
+                <td>
+                    <code>
+                        <code class="mi-clase">
+                          // Este es un bloque de código
+                          for (let i = 0; i < 5; i++) {
+                              console.log("Número " + i);
+                          }
+                        </code>
+                    <code id="mi-id">
+                          // Este es otro bloque de código con un ID.
+                          alert("¡Hola, mundo!");
+                        </code>
+                    <code style="color: blue;">
+                          // Este es un bloque de código con un estilo.
+                          document.getElementById("demo").innerHTML = "¡Hola, desde JavaScript!";
+                        </code>
+                    </code>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Para obtener información adicional sobre las etiquetas de texto HTML, consulta la <a
+            href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento">documentación de HTML en MDN Web Docs</a>.
+    </p>
+
+    <p>¿Deseas aprender más sobre HTML? Descubre nuestros <a href="https://www.ejemplos-html.com/">ejemplos de HTML</a>
+        para mejorar tus habilidades.</p>
 </body>
 
 </html>
