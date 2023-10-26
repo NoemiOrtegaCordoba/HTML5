@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>API de Arrastrar y Soltar en HTML5</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>API de Arrastrar y Soltar en HTML5</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Categoría</th>
+                <th>Elemento/Característica</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Categoría: Elementos Principales -->
+            <tr>
+                <td rowspan="3">Elementos Principales</td>
+                <td>Elementos Arrastrables</td>
+                <td>Elementos que se pueden arrastrar, como imágenes, enlaces, etc.</td>
+            </tr>
+            <tr>
+                <td>Destinos de Soltar</td>
+                <td>Áreas en las que se pueden soltar los elementos arrastrados.</td>
+            </tr>
+            <tr>
+                <td>Ghost Image</td>
+                <td>Una imagen fantasma que representa el elemento arrastrado durante la operación.</td>
+            </tr>
+
+            <!-- Categoría: Eventos de Arrastrar y Soltar -->
+            <tr>
+                <td rowspan="6">Eventos de Arrastrar y Soltar</td>
+                <td>dragstart</td>
+                <td>Se dispara cuando comienza el arrastre de un elemento.</td>
+            </tr>
+            <tr>
+                <td>dragenter</td>
+                <td>Se dispara cuando un elemento se arrastra sobre un objetivo de soltar.</td>
+            </tr>
+            <tr>
+                <td>dragover</td>
+                <td>Se dispara mientras se arrastra un elemento sobre un objetivo de soltar.</td>
+            </tr>
+            <tr>
+                <td>dragleave</td>
+                <td>Se dispara cuando un elemento sale de un objetivo de soltar.</td>
+            </tr>
+            <tr>
+                <td>drop</td>
+                <td>Se dispara cuando se suelta un elemento en un objetivo de soltar.</td>
+            </tr>
+            <tr>
+                <td>dragend</td>
+                <td>Se dispara cuando se completa la operación de arrastrar y soltar.</td>
+            </tr>
+
+            <!-- Categoría: Atributos y Propiedades -->
+            <tr>
+                <td rowspan="2">Atributos y Propiedades</td>
+                <td>draggable</td>
+                <td>Atributo que indica si un elemento es arrastrable o no.</td>
+            </tr>
+            <tr>
+                <td>dataTransfer</td>
+                <td>Propiedad que permite transferir datos durante la operación de arrastrar y soltar.</td>
+            </tr>
+
+            <!-- Categoría: Efectos y Feedback -->
+            <tr>
+                <td rowspan="2">Efectos y Feedback</td>
+                <td>Feedback Visual</td>
+                <td>Cambios visuales en el elemento o destino durante el arrastre para proporcionar retroalimentación al
+                    usuario.</td>
+            </tr>
+            <tr>
+                <td>effectAllowed</td>
+                <td>Propiedad que controla el efecto de arrastre permitido, como "mover" o "copiar".</td>
+            </tr>
+
+            <!-- Categoría: API de Datos -->
+            <tr>
+                <td rowspan="3">API de Datos</td>
+                <td>DataTransfer API</td>
+                <td>Proporciona métodos para transferir datos durante la operación de arrastrar y soltar.</td>
+            </tr>
+            <tr>
+                <td>setDragImage()</td>
+                <td>Método que permite establecer una imagen personalizada como representación del elemento arrastrado.
+                </td>
+            </tr>
+            <tr>
+                <td>clearData()</td>
+                <td>Método que borra los datos asociados con la operación de arrastrar y soltar.</td>
+            </tr>
+
+            <!-- Categoría: Restricciones y Comportamiento Personalizado -->
+            <tr>
+                <td rowspan="2">Restricciones y Comportamiento Personalizado</td>
+                <td>dropEffect</td>
+                <td>Propiedad que controla el efecto de soltar predeterminado.</td>
+            </tr>
+            <tr>
+                <td>allowedEffects</td>
+                <td>Propiedad que especifica los efectos de soltar permitidos.</td>
+            </tr>
+
+            <!-- Categoría: Personalización y Estilos -->
+            <tr>
+                <td rowspan="2">Personalización y Estilos</td>
+                <td>Estilos CSS</td>
+                <td>Se pueden aplicar estilos personalizados para indicar elementos arrastrables y áreas de destino.
+                </td>
+            </tr>
+            <tr>
+                <td>Custom Feedback</td>
+                <td>Personalización de la retroalimentación visual durante la operación de arrastrar y soltar.</td>
+            </tr>
+
+            <!-- Categoría: Operaciones Avanzadas -->
+            <tr>
+                <td rowspan="2">Operaciones Avanzadas</td>
+                <td>Arrastrar entre Ventanas/Documentos</td>
+                <td>Permite arrastrar elementos entre ventanas o documentos web diferentes.</td>
+            </tr>
+            <tr>
+                <td>Arrastrar y Soltar Archivos</td>
+                <td>Permite arrastrar y soltar archivos desde el sistema de archivos del usuario.</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
