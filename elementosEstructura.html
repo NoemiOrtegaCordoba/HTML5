@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,18 +10,18 @@
             width: 100%;
             border-collapse: collapse;
         }
-    
+
         th,
         td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
-    
+
         th {
             background-color: #f2f2f2;
         }
-    
+
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <h1>Etiquetas de estructura</h1>
+    <h1>Tabla de Elementos de Estructura en HTML5</h1>
     <table>
         <thead>
             <tr>
@@ -39,98 +39,162 @@
             </tr>
         </thead>
         <tbody>
+            <!-- Elementos Raíz -->
             <tr>
-                <td rowspan="4">Encabezado</td>
-                <td><code>&lt;header&gt;</code></td>
-                <td>Crea un encabezado</td>
+                <td rowspan="3">Elementos Raíz</td>
+                <td>&lt;html&gt;</td>
+                <td>Define el inicio y el final de un documento HTML.</td>
             </tr>
             <tr>
-                <td><code>&lt;footer&gt;</code></td>
-                <td>Crea un pie de página</td>
+                <td>&lt;head&gt;</td>
+                <td>Contiene metadatos, enlaces y scripts del documento.</td>
             </tr>
             <tr>
-                <td><code>&lt;nav&gt;</code></td>
-                <td>Crea una barra de navegación</td>
+                <td>&lt;body&gt;</td>
+                <td>Contiene el contenido visible de la página.</td>
+            </tr>
+            <!-- Elementos de Metadatos -->
+            <tr>
+                <td rowspan="4">Elementos de Metadatos</td>
+                <td>&lt;title&gt;</td>
+                <td>Define el título visible de la página en la barra de título del navegador.</td>
             </tr>
             <tr>
-                <td><code>&lt;aside&gt;</code></td>
-                <td>Crea un contenido secundario</td>
+                <td>&lt;meta&gt;</td>
+                <td>Proporciona metainformación, como el juego de caracteres, sobre el documento.</td>
             </tr>
             <tr>
-                <td rowspan="4">Organización</td>
-                <td><code>&lt;div&gt;</code></td>
-                <td>Crea un contenedor para agrupar elementos HTML</td>
+                <td>&lt;link&gt;</td>
+                <td>Vincula el documento a hojas de estilo externas o iconos.</td>
             </tr>
             <tr>
-                <td><code>&lt;section&gt;</code></td>
-                <td>Crea una sección de contenido</td>
+                <td>&lt;script&gt;</td>
+                <td>Incluye scripts, generalmente JavaScript.</td>
+            </tr>
+            <!-- Elementos de Encabezado -->
+            <tr>
+                <td rowspan="6">Elementos de Encabezado</td>
+                <td>&lt;header&gt;</td>
+                <td>Define la cabecera de la página, a menudo contiene logotipos y enlaces de navegación.</td>
             </tr>
             <tr>
-                <td><code>&lt;article&gt;</code></td>
-                <td>Crea un artículo de contenido</td>
+                <td>&lt;footer&gt;</td>
+                <td>Define el pie de página de la página, suele incluir información de contacto o derechos de autor.
+                </td>
             </tr>
             <tr>
-                <td><code>&lt;main&gt;</code></td>
-                <td>Define el contenido principal de la página web</td>
+                <td>&lt;nav&gt;</td>
+                <td>Contiene enlaces de navegación, como menús de navegación.</td>
             </tr>
             <tr>
-                <td rowspan="3">Listas</td>
-                <td><code>&lt;ul&gt;</code></td>
-                <td>Crea una lista no numerada</td>
+                <td>&lt;section&gt;</td>
+                <td>Define una sección temática de la página. Puede contener encabezados y contenido relacionado.</td>
             </tr>
             <tr>
-                <td><code>&lt;ol&gt;</code></td>
-                <td>Crea una lista numerada</td>
+                <td>&lt;article&gt;</td>
+                <td>Define un artículo independiente y autocontenido, como una publicación de blog.</td>
             </tr>
             <tr>
-                <td><code>&lt;li&gt;</code></td>
-                <td>Crea un elemento de una lista</td>
+                <td>&lt;aside&gt;</td>
+                <td>Contiene contenido relacionado pero no esencial para el artículo principal.</td>
+            </tr>
+            <!-- Elementos de Agrupación -->
+            <tr>
+                <td rowspan="4">Elementos de Agrupación</td>
+                <td>&lt;div&gt;</td>
+                <td>Agrupa y estructura el contenido sin ningún significado semántico específico.</td>
             </tr>
             <tr>
-                <td rowspan="4">Cuadros</td>
-                <td><code>&lt;table&gt;</code></td>
-                <td>Crea una tabla</td>
+                <td>&lt;span&gt;</td>
+                <td>Agrupa elementos en línea sin cambiar el flujo del texto.</td>
             </tr>
             <tr>
-                <td><code>&lt;tr&gt;</code></td>
-                <td>Crea una fila de una tabla</td>
+                <td>&lt;main&gt;</td>
+                <td>Define el contenido principal de la página, generalmente un único elemento en la página.</td>
             </tr>
             <tr>
-                <td><code>&lt;th&gt;</code></td>
-                <td>Crea una celda de encabezado de una tabla</td>
+                <td>&lt;figure&gt;</td>
+                <td>Agrupa contenido, como imágenes, con sus descripciones (&lt;figcaption&gt;).</td>
+            </tr>
+            <!-- Elementos de Texto -->
+            <tr>
+                <td rowspan="5">Elementos de Texto</td>
+                <td>&lt;p&gt;</td>
+                <td>Define un párrafo.</td>
             </tr>
             <tr>
-                <td><code>&lt;td&gt;</code></td>
-                <td>Crea una celda de datos de una tabla</td>
+                <td>&lt;h1&gt;, &lt;h2&gt;, ... &lt;h6&gt;</td>
+                <td>Encabezados de diferentes niveles, desde el más alto (h1) al más bajo (h6).</td>
             </tr>
             <tr>
-                <td rowspan="7">Formularios</td>
-                <td><code>&lt;form&gt;</code></td>
-                <td>Crea un formulario</td>
+                <td>&lt;ul&gt;, &lt;ol&gt;</td>
+                <td>Crea listas desordenadas y ordenadas, respectivamente.</td>
             </tr>
             <tr>
-                <td><code>&lt;input&gt;</code></td>
-                <td>Crea un campo de entrada</td>
+                <td>&lt;li&gt;</td>
+                <td>Elementos de lista dentro de &lt;ul&gt; o &lt;ol&gt;.</td>
             </tr>
             <tr>
-                <td><code>&lt;textarea&gt;</code></td>
-                <td>Crea un área de texto</td>
+                <td>&lt;blockquote&gt;</td>
+                <td>Cita textual o bloque de citas.</td>
+            </tr>
+            <!-- Elementos de Formulario -->
+            <tr>
+                <td rowspan="5">Elementos de Formulario</td>
+                <td>&lt;form&gt;</td>
+                <td>Define un formulario para la entrada de datos.</td>
             </tr>
             <tr>
-                <td><code>&lt;select&gt;</code></td>
-                <td>Crea un menú desplegable</td>
+                <td>&lt;input&gt;</td>
+                <td>Elemento de entrada en un formulario, con varios tipos como texto, contraseña, etc.</td>
             </tr>
             <tr>
-                <td><code>&lt;option&gt;</code></td>
-                <td>Crea una opción en un menú desplegable</td>
+                <td>&lt;button&gt;</td>
+                <td>Botón interactivo en un formulario.</td>
             </tr>
             <tr>
-                <td><code>&lt;button&gt;</code></td>
-                <td>Crea un botón para iniciar una acción.</td>
+                <td>&lt;select&gt;</td>
+                <td>Crea listas desplegables para seleccionar opciones.</td>
             </tr>
             <tr>
-                <td><code>&lt;label&gt;</code></td>
-                <td>Crea una etiqueta para un campo de entrada</td>
+                <td>&lt;textarea&gt;</td>
+                <td>Área de texto de múltiples líneas en un formulario.</td>
+            </tr>
+            <!-- Elementos Multimedia -->
+            <tr>
+                <td rowspan="4">Elementos Multimedia</td>
+                <td>&lt;img&gt;</td>
+                <td>Inserta imágenes en la página.</td>
+            </tr>
+            <tr>
+                <td>&lt;audio&gt;</td>
+                <td>Incrusta contenido de audio, con controles de reproducción.</td>
+            </tr>
+            <tr>
+                <td>&lt;video&gt;</td>
+                <td>Incrusta contenido de video, con controles de reproducción.</td>
+            </tr>
+            <tr>
+                <td>&lt;object&gt;</td>
+                <td>Incrusta objetos multimedia, como contenido Flash (menos común en la actualidad).</td>
+            </tr>
+            <!-- Elementos de Tabla -->
+            <tr>
+                <td rowspan="4">Elementos de Tabla</td>
+                <td>&lt;table&gt;</td>
+                <td>Crea tablas en la página.</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Define filas en una tabla.</td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Define encabezados de celda en una tabla, generalmente en la primera fila.</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Define celdas de datos en una tabla.</td>
             </tr>
         </tbody>
     </table>

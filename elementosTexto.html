@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de texto</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>Categoría</th>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Atributos</th>
+            <th>Ejemplo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4">Párrafo</td>
+            <td><code>&lt;p&gt;</code></td>
+            <td>Crea un párrafo</td>
+            <td>
+                <ul>
+                    <li><code>align</code>: Alinea el texto del párrafo</li>
+                    <li><code>class</code>: Asigna una clase al párrafo</li>
+                    <li><code>id</code>: Asigna un ID al párrafo</li>
+                    <li><code>style</code>: Aplica estilos al párrafo</li>
+                </ul>
+            </td>
+            <td>
+                <code>
+            <p align="center">Este es un párrafo centrado</p>
+            <p class="mi-clase">Este es un párrafo con una clase</p>
+            <p id="mi-id">Este es un párrafo con un ID</p>
+            <p style="color: red;">Este es un párrafo con un estilo</p>
+          </code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>&lt;pre&gt;</code></td>
+            <td>Crea un bloque de texto preformateado</td>
+            <td>
+                <ul>
+                    <li><code>class</code>: Asigna una clase al bloque de texto preformateado</li>
+                    <li><code>id</code>: Asigna un ID al bloque de texto preformateado</li>
+                    <li><code>style</code>: Aplica estilos al bloque de texto preformateado</li>
+                </ul>
+            </td>
+            <td>
+                <code>
+            <pre class="mi-clase">
+              Este es un bloque de texto preformateado.
+
+              * Este es un elemento de lista
+              * Este es otro elemento de lista
+            </pre>
+            <pre id="mi-id">
+              Este es un bloque de texto preformateado con un ID.
+            </pre>
+            <pre style="color: red;">
+              Este es un bloque de texto preformateado con un estilo.
+            </pre>
+          </code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>&lt;blockquote&gt;</code></td>
+            <td>Crea una cita</td>
+            <td>
+                <ul>
+                    <li><code>cite</code>: Apunta a la fuente de la cita</li>
+                    <li><code>class</code>: Asigna una clase a la cita</li>
+                    <li><code>id</code>: Asigna un ID a la cita</li>
+                    <li><code>style</code>: Aplica estilos a la cita</li>
+                </ul>
+            </td>
+            <td>
+                <code>
+            <blockquote cite="https://www.wikipedia.org/wiki/Cita">
+              > "La vida es como una caja de bombones, nunca sabes lo que te va a tocar."
+              > - Forrest Gump
+            </blockquote>
+            <blockquote cite="https://www.example.com/cita">
+              Este es un ejemplo de cita con un ID.
+            </blockquote>
+            <blockquote style="color: red;">
+              Este es un ejemplo de cita con un estilo.
+            </blockquote>
+          </code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>&lt;code&gt;</code></td>
+            <td>Crea un bloque de código
+</body>
+
+</html>
