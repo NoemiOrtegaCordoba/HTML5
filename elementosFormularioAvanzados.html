@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabla de Elementos de Formulario Avanzados en HTML5</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Elementos de Formulario Avanzados en HTML5</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Categoría</th>
+                <th>Elemento</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Categoría: Entrada de Datos -->
+            <tr>
+                <td rowspan="6">Entrada de Datos</td>
+                <td>&lt;input&gt;</td>
+                <td>Elemento de entrada en un formulario, con tipos avanzados como fecha, hora, teléfono, etc.</td>
+            </tr>
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Área de texto de múltiples líneas en un formulario.</td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>Define un menú desplegable para seleccionar opciones.</td>
+            </tr>
+            <tr>
+                <td>&lt;datalist&gt;</td>
+                <td>Define una lista de opciones para su uso con el elemento &lt;input&gt; tipo "text".</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="file"&gt;</td>
+                <td>Permite a los usuarios cargar archivos desde su dispositivo.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="checkbox"&gt;</td>
+                <td>Permite a los usuarios seleccionar múltiples opciones.</td>
+            </tr>
+
+            <!-- Categoría: Controles de Formulario Personalizados -->
+            <tr>
+                <td rowspan="3">Controles de Formulario Personalizados</td>
+                <td>&lt;input type="range"&gt;</td>
+                <td>Permite a los usuarios seleccionar un valor dentro de un rango.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="color"&gt;</td>
+                <td>Permite a los usuarios seleccionar un color.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="range"&gt;</td>
+                <td>Permite a los usuarios seleccionar un valor dentro de un rango.</td>
+            </tr>
+
+            <!-- Categoría: Validación de Formulario -->
+            <tr>
+                <td rowspan="4">Validación de Formulario</td>
+                <td>&lt;input type="email"&gt;</td>
+                <td>Verifica que la entrada sea una dirección de correo electrónico válida.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="url"&gt;</td>
+                <td>Verifica que la entrada sea una URL válida.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="tel"&gt;</td>
+                <td>Verifica que la entrada sea un número de teléfono válido.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="number"&gt;</td>
+                <td>Permite la entrada de números y realiza validación numérica.</td>
+            </tr>
+
+            <!-- Categoría: Selección de Fechas y Tiempo -->
+            <tr>
+                <td rowspan="5">Selección de Fechas y Tiempo</td>
+                <td>&lt;input type="date"&gt;</td>
+                <td>Permite a los usuarios seleccionar una fecha.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="time"&gt;</td>
+                <td>Permite a los usuarios seleccionar una hora.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="datetime-local"&gt;</td>
+                <td>Permite a los usuarios seleccionar fecha y hora local.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="week"&gt;</td>
+                <td>Permite a los usuarios seleccionar una semana.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="month"&gt;</td>
+                <td>Permite a los usuarios seleccionar un mes.</td>
+            </tr>
+
+            <!-- Categoría: Controles de Rango -->
+            <tr>
+                <td rowspan="1">Controles de Rango</td>
+                <td>&lt;input type="range"&gt;</td>
+                <td>Permite a los usuarios seleccionar un valor dentro de un rango.</td>
+            </tr>
+
+            <!-- Categoría: Contenido Multimedia en Formularios -->
+            <tr>
+                <td rowspan="1">Contenido Multimedia en Formularios</td>
+                <td>&lt;input type="file"&gt;</td>
+                <td>Permite a los usuarios cargar archivos multimedia.</td>
+            </tr>
+
+            <!-- Categoría: Elementos de Salida de Formulario -->
+            <tr>
+                <td rowspan="1">Elementos de Salida de Formulario</td>
+                <td>&lt;output&gt;</td>
+                <td>Se utiliza para mostrar el resultado de cálculos realizados en el formulario.</td>
+            </tr>
+
+            <!-- Categoría: Formularios Ocultos -->
+            <tr>
+                <td rowspan="1">Formularios Ocultos</td>
+                <td>&lt;input type="hidden"&gt;</td>
+                <td>Se utiliza para almacenar datos ocultos en el formulario que se envían al servidor cuando se envía
+                    el formulario.</td>
+            </tr>
+
+            <!-- Categoría: Formularios Interactivos -->
+            <tr>
+                <td rowspan="5">Formularios Interactivos</td>
+                <td>&lt;button&gt;</td>
+                <td>Elemento botón interactivo que puede activar eventos.</td>
+            </tr>
+            <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>Define un grupo de controles de formulario relacionados.</td>
+            </tr>
+            <tr>
+                <td>&lt;legend&gt;</td>
+                <td>Define un título para el elemento &lt;fieldset&gt;.</td>
+            </tr>
+            <tr>
+                <td>&lt;label&gt;</td>
+                <td>Etiqueta de texto para un elemento de formulario.</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="button"&gt;</td>
+                <td>Un botón de formulario estándar que no realiza ninguna acción por sí mismo.</td>
+            </tr>
+
+            <!-- Agrega más elementos de acuerdo a las categorías -->
+        </tbody>
+    </table>
+</body>
+
+</html>
