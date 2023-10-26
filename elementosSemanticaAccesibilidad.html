@@ -24,6 +24,7 @@
 
 <body>
     <h1>Elementos de Semántica y Accesibilidad en HTML5</h1>
+
     <table>
         <thead>
             <tr>
@@ -35,17 +36,19 @@
         <tbody>
             <!-- Categoría: Estructura de Documento -->
             <tr>
-                <td rowspan="6">Estructura de Documento</td>
+                <td rowspan="7">Estructura de Documento</td>
                 <td>&lt;header&gt;</td>
-                <td>Define la cabecera de un documento o sección.</td>
+                <td>Define la cabecera de un documento o sección. Contiene información como logotipos y encabezados.
+                </td>
             </tr>
             <tr>
                 <td>&lt;nav&gt;</td>
-                <td>Define una sección de navegación.</td>
+                <td>Define una sección de navegación. Útil para menús de navegación principal o secundaria.</td>
             </tr>
             <tr>
                 <td>&lt;main&gt;</td>
-                <td>Define el contenido principal de un documento.</td>
+                <td>Define el contenido principal de un documento, facilitando la navegación para lectores de pantalla.
+                </td>
             </tr>
             <tr>
                 <td>&lt;article&gt;</td>
@@ -54,104 +57,165 @@
             </tr>
             <tr>
                 <td>&lt;section&gt;</td>
-                <td>Define una sección temática dentro de un documento.</td>
+                <td>Define una sección temática dentro de un documento, lo que mejora la estructura y comprensión del
+                    contenido.</td>
             </tr>
             <tr>
                 <td>&lt;aside&gt;</td>
-                <td>Define contenido relacionado pero no esencial.</td>
+                <td>Define contenido relacionado pero no esencial, como anuncios o información adicional.</td>
+            </tr>
+            <tr>
+                <td>&lt;footer&gt;</td>
+                <td>Define el pie de página de un documento o sección, que suele contener información de contacto y
+                    enlaces relacionados.</td>
             </tr>
 
             <!-- Categoría: Elementos de Texto y Títulos -->
             <tr>
-                <td rowspan="2">Elementos de Texto y Títulos</td>
+                <td rowspan="3">Elementos de Texto y Títulos</td>
                 <td>&lt;h1&gt;, &lt;h2&gt;, ...</td>
-                <td>Definen encabezados de diferentes niveles.</td>
+                <td>Definen encabezados de diferentes niveles, lo que ayuda a estructurar el contenido y mejora la
+                    accesibilidad.</td>
             </tr>
             <tr>
                 <td>&lt;p&gt;</td>
-                <td>Define un párrafo.</td>
+                <td>Define un párrafo, permitiendo una presentación clara y legible del texto.</td>
+            </tr>
+            <tr>
+                <td>&lt;blockquote&gt;</td>
+                <td>Define una cita o bloque de texto destacado, mejorando la presentación de citas y contenido citado.
+                </td>
             </tr>
 
             <!-- Categoría: Listas y Elementos de Definición -->
             <tr>
-                <td rowspan="3">Listas y Elementos de Definición</td>
+                <td rowspan="4">Listas y Elementos de Definición</td>
                 <td>&lt;ul&gt;, &lt;ol&gt;</td>
-                <td>Definen listas no ordenadas y ordenadas.</td>
+                <td>Definen listas no ordenadas y ordenadas, ideales para presentar información en formato de lista.
+                </td>
             </tr>
             <tr>
                 <td>&lt;li&gt;</td>
-                <td>Define un elemento de lista.</td>
+                <td>Define un elemento de lista, contribuyendo a una presentación ordenada de elementos.</td>
             </tr>
             <tr>
                 <td>&lt;dl&gt;</td>
-                <td>Define una lista de definición.</td>
+                <td>Define una lista de definición, útil para glosarios y términos con sus descripciones
+                    correspondientes.</td>
+            </tr>
+            <tr>
+                <td>&lt;dt&gt;</td>
+                <td>Define un término en una lista de definición, ayudando a estructurar glosarios y definiciones.</td>
             </tr>
 
             <!-- Categoría: Elementos de Enlace -->
             <tr>
                 <td rowspan="3">Elementos de Enlace</td>
                 <td>&lt;a&gt;</td>
-                <td>Define un enlace.</td>
+                <td>Define un enlace, permitiendo la navegación a otras páginas o recursos relacionados.</td>
             </tr>
             <tr>
                 <td>&lt;nav&gt;</td>
-                <td>Define una sección de navegación.</td>
+                <td>Define una sección de navegación, que facilita la exploración del sitio web.</td>
             </tr>
             <tr>
                 <td>&lt;menu&gt;</td>
-                <td>Define un menú de opciones.</td>
+                <td>Define un menú de opciones, lo que mejora la usabilidad y navegación en sitios web interactivos.
+                </td>
             </tr>
 
             <!-- Categoría: Elementos de Formularios -->
             <tr>
                 <td rowspan="4">Elementos de Formularios</td>
                 <td>&lt;form&gt;</td>
-                <td>Define un formulario.</td>
+                <td>Define un formulario para la entrada de datos, esencial para la interacción del usuario.</td>
             </tr>
             <tr>
                 <td>&lt;input&gt;</td>
-                <td>Define un campo de entrada de datos en un formulario.</td>
+                <td>Define un campo de entrada de datos en un formulario, incluyendo opciones como texto, radio, y más.
+                </td>
             </tr>
             <tr>
                 <td>&lt;label&gt;</td>
-                <td>Etiqueta de texto para un elemento de formulario.</td>
+                <td>Etiqueta de texto para un elemento de formulario, mejorando la accesibilidad y experiencia del
+                    usuario.</td>
             </tr>
             <tr>
                 <td>&lt;button&gt;</td>
-                <td>Elemento botón interactivo para formularios.</td>
+                <td>Elemento botón interactivo para formularios, proporcionando una manera clara de enviar información.
+                </td>
             </tr>
 
             <!-- Categoría: Elementos de Contenido Incrustado -->
             <tr>
                 <td rowspan="2">Elementos de Contenido Incrustado</td>
                 <td>&lt;figure&gt;</td>
-                <td>Define contenido incrustado, como imágenes, videos o gráficos, junto con una descripción.</td>
+                <td>Define contenido incrustado, como imágenes, videos o gráficos, junto con una descripción, mejorando
+                    la accesibilidad.</td>
             </tr>
             <tr>
                 <td>&lt;figcaption&gt;</td>
-                <td>Define una descripción para el contenido dentro de un elemento &lt;figure&gt;.</td>
+                <td>Define una descripción para el contenido dentro de un elemento &lt;figure&gt;, facilitando la
+                    comprensión para todos los usuarios.</td>
             </tr>
 
             <!-- Categoría: Elementos de Accesibilidad -->
             <tr>
-                <td rowspan="4">Elementos de Accesibilidad</td>
+                <td rowspan="5">Elementos de Accesibilidad</td>
                 <td>&lt;mark&gt;</td>
-                <td>Resalta texto para llamar la atención.</td>
+                <td>Resalta texto para llamar la atención, lo que es especialmente útil para lectores de pantalla.</td>
             </tr>
             <tr>
                 <td>&lt;strong&gt;</td>
-                <td>Indica un texto fuerte o importante.</td>
+                <td>Indica un texto fuerte o importante, permitiendo una mayor comprensión del contenido.</td>
             </tr>
             <tr>
                 <td>&lt;em&gt;</td>
-                <td>Enfatiza el texto.</td>
+                <td>Enfatiza el texto, lo que puede ser crucial para transmitir énfasis en la lectura en voz alta.</td>
             </tr>
             <tr>
                 <td>&lt;abbr&gt;</td>
-                <td>Define una abreviatura.</td>
+                <td>Define una abreviatura, proporcionando una explicación adicional para términos abreviados.</td>
+            </tr>
+            <tr>
+                <td>&lt;time&gt;</td>
+                <td>Indica una fecha o hora, permitiendo una mejor interpretación de fechas y horarios por parte de los
+                    navegadores y lectores de pantalla.</td>
             </tr>
 
-            <!-- Agrega más elementos de acuerdo a las categorías -->
+            <!-- Categoría: Elementos Multimedia -->
+            <tr>
+                <td rowspan="3">Elementos Multimedia</td>
+                <td>&lt;audio&gt;</td>
+                <td>Permite la inserción de contenido de audio en la página, lo que es esencial para la accesibilidad de
+                    personas con discapacidades auditivas.</td>
+            </tr>
+            <tr>
+                <td>&lt;video&gt;</td>
+                <td>Permite la inserción de contenido de video en la página, facilitando la inclusión de contenido
+                    multimedia.</td>
+            </tr>
+            <tr>
+                <td>&lt;canvas&gt;</td>
+                <td>Define un área gráfica en la que se puede dibujar a través de scripts, lo que es útil para
+                    aplicaciones interactivas.</td>
+            </tr>
+
+            <!-- Categoría: Elementos de Tablas -->
+            <tr>
+                <td rowspan="3">Elementos de Tablas</td>
+                <td>&lt;table&gt;</td>
+                <td>Define una tabla, lo que es esencial para mostrar datos tabulares de manera estructurada.</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Define una fila en una tabla, ayudando a organizar y presentar datos de manera ordenada.</td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Define una celda de encabezado en una tabla, mejorando la accesibilidad y comprensión de datos.</td>
+            </tr>
+
         </tbody>
     </table>
 </body>
