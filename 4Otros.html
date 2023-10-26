@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de contenido "otros"</title>
+</head>
+
+<body>
+    <address>
+        <strong>Nombre:</strong> John Doe
+        <br>
+        <strong>Dirección:</strong> 123 Main Street, Anytown, CA 12345
+        <br>
+        <strong>Número de teléfono:</strong> (555) 555-5555
+        <br>
+        <strong>Dirección de correo electrónico:</strong> johndoe@example.com
+    </address>
+
+    <map name="mapa">
+        <area shape="rect" coords="10, 10, 100, 100" href="pagina.html">
+    </map>
+
+    <input type="text" name="pais" list="paises">
+    <datalist id="paises">
+        <option value="España">
+        <option value="Francia">
+        <option value="Italia">
+    </datalist>
+
+    <embed src="video.mp4" type="video/mp4" width="500" height="300">
+
+    <form action="procesar.php">
+        <fieldset>
+            <legend>Información personal</legend>
+            <input type="text" name="nombre">
+            <input type="text" name="apellidos">
+            <input type="email" name="correo">
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <figure> <!-- La etiqueta <figure> se utiliza para agrupar contenido multimedia, como imágenes -->
+        <img src="images/perro.jpg" alt="Imagen de un perro">
+        <!-- La etiqueta <img> se utiliza para mostrar una imagen. El atributo "src" especifica la fuente de la imagen y "alt" proporciona un texto alternativo en caso de que la imagen no se cargue o para accesibilidad. -->
+        <figcaption>Este es un perro.</figcaption>
+        <!-- La etiqueta <figcaption> se utiliza para proporcionar una descripción o leyenda para la imagen dentro del <figure>. En este caso, la leyenda dice "Este es un perro". -->
+    </figure>
+
+    <form action="procesar.php">
+        <input type="password" name="contraseña" id="contraseña">
+        <keygen name="contraseña_generador">
+    </form>
+
+    <meter value="50" min="0" max="100">50%</meter>
+
+    <progress value="50" max="100">50%</progress>
+</body>
+
+</html>
